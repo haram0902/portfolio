@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haram Kim | Portfolio</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdfdfd;
+            color: #333;
+        }
+        header {
+            background: #4285f4;
+            color: #fff;
+            padding: 20px 0;
+        }
+		.header-container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+			display: flex;
+			align-items: center;
+		}
+        .header-name {
+            text-align: left;
+			flex-direction: column;
+			justify-content: center;
+        }
+        .header-name h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .header-name p {
+            margin: 5px 0 0;
+            font-size: 1.3em;
+        }
+        .header-image {
+            width: 140px;
+            height: 140px;
+            background: #fdfdfd;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.2);
+			margin-right: 50px
+        }
+        .header-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+			border-radius: 50%;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+		.section p {
+			font-size: 1.2em;
+			font-weight: 400;
+		}
+		.font-theme {
+			color: #4285f4;
+		}
+		.font-heavy {
+			font-weight: bold;
+		}
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #4285f4;
+            border-bottom: 3px solid #5e96f2;
+            display: inline-block;
+			width: 100%;
+        }
+		.skills-container {
+			display: flex;
+			flex-direction: column;
+			gap: 30px; /* Add spacing between categories */
+		}
+		.skill-category {
+			display: flex;
+			flex-direction: row;
+			background: #f8f9fa;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			max-width: 100%;
+		}
+		.skill-category h3 {
+			margin-top: 0;
+			margin-right: 50px;
+			font-size: 1.5em;
+			color: #2c3e50;
+			min-width: 165px;
+			flex-shrink: 0;
+		}
+		.skills {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 15px;
+			justify-content: flex-start;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.skill {
+			background: #4285f4;
+			border-radius: 50px;
+			padding: 10px 20px;
+			font-size: 1em;
+			color: #ffffff;
+			border: 1px solid #4285f4;
+			height: 20px;
+			line-height: 20px;
+			display: inline-flex;
+			align-items: center;
+		}
+		
+		.experience-container {
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+		}
+
+		.experience-item {
+			display: flex;
+			align-items: flex-start;
+			gap: 20px;
+			background: #f8f9fa;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		.experience-dates {
+			margin-top: 0px;
+			font-size: 1.4em;
+			font-weight: 600;
+			color: #2c3e50;
+			min-width: 180px;
+		}
+
+		.experience-info {
+			flex-grow: 1;
+		}
+
+		.experience-info h3 {
+			font-size: 1.8em;
+			font-weight: 800;
+			color: #4285f4;
+			margin: 0;
+		}
+		
+		.experience-team {
+			font-size: 1.2em;
+			color: #7f8c8d;
+			margin-top: 5px;
+		}
+
+		.experience-description {
+			font-size: 1.2em;
+			margin-top: 10px;
+			color: #333;
+		}
+
+        .project {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+		.project-card {
+			background: #fff;
+			border: 1px solid #ecf0f1;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			padding: 20px;
+			flex: 1 1 calc(50% - 56px);
+			max-width: calc(50% - 56px);
+			text-align: left;
+		}
+
+		.project-card h3 {
+			margin: 0 0 5px 0;
+			color: #4285f4;
+			font-size: 1.3em;
+			font-weight: bold;
+		}
+		
+		.project-card .sub-description {
+			margin: 0;
+			font-size: 1em;
+			color: #7f8c8d;
+			
+		}
+		
+		.project-description {
+			margin-top: 10px;
+			list-style-type: disc,
+			padding-left: 20px;
+		}
+
+		.project-card li {
+			margin-bottom: 5px;
+			font-size: 1em;
+			color: #333;
+		}
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #4285f4;
+            color: #fff;
+        }
+        footer a {
+            color: #1abc9c;
+            text-decoration: none;
+        }
+		
+		a {
+			color: #78909c;
+		}
+    </style>
+</head>
+<body>
+    <header>
+		<div class="header-container">
+			<div class="header-image">
+				<img src="./assets/images/profile.png" alt="Profile Image">
+			</div>
+			<div class="header-name">
+				<h1>김하람 Haram Kim</h1>
+				<p>Server Backend Developer</p>
+			</div>
+			
+		</div>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2 class="section-title">About Me</h2>
+			<p>2019년에 카카오 블라인드 공개채용에 합격하여 카카오게임즈에 입사한 이후, 게임을 즐기는 유저들을 위한 다양한 서비스를 개발하고 유지보수하는 업무를 담당해왔습니다. 주요 언어 및 프레임워크로 <span class="font-theme">Java, Spring, Spring Boot</span>를 사용하여 웹 서비스를 개발해왔으며, 데이터베이스는 <span class="font-theme">MySQL, DynamoDB, Elasticsearch</span>를 활용하여 각 서비스에 최적화된 데이터 관리 시스템을 구축하였습니다.</p>
+			<p>또한, <span class="font-theme">Kafka</span>를 활용해 대규모 트래픽을 안정적으로 처리하는 서비스 환경을 구축하였으며, <span class="font-theme">Jenkins</span>와 <span class="font-theme">Ansible</span>을 활용해 CI/CD 환경을 구축하여 개발및 배포 과정의 효율성을 높였습니다. 더불어 <span class="font-theme">ELK 스택</span>과 <span class="font-theme">Grafana</span>를 활용하여 모니터링 시스템을 구축함으로써 서비스 성능과 운영 상태를 실시간으로 관리하고 신속하게 대응할 수 있는 환경을 마련했습니다.</p>
+			<p>백엔드 개발 업무를 주로 맡으며 이를 즐기는 만큼, 앞으로도 지속적으로 발전하며 사용자에게 최상의 경험을 제공하는 서비스를 만들어 나가고 싶습니다.</p>
+
+        </div>
+
+        <div class="section">
+			<h2 class="section-title">Skills</h2>
+			<div class="skills-container">
+				<div class="skill-category">
+					<h3>Backend</h3>
+					<div class="skills">
+						<span class="skill">Java</span>
+						<span class="skill">Python</span>
+						<span class="skill">javascript</span>
+						<span class="skill">Spring Boot</span>
+						<span class="skill">Spring Batch</span>
+						<span class="skill">Spring Data JPA</span>
+						<span class="skill">Gradle</span>
+						<span class="skill">Maven</span>
+						<span class="skill">NodeJS</span>
+						<span class="skill">Webpack</span>
+					</div>
+				</div>
+				<div class="skill-category">
+					<h3>Infrastructure</h3>
+					<div class="skills">
+						<span class="skill">MySQL</span>
+						<span class="skill">DynamoDB</span>
+						<span class="skill">Elasticsearch</span>
+						<span class="skill">Kafka</span>
+						<span class="skill">Jenkins</span>
+						<span class="skill">Ansible</span>
+						<span class="skill">ElasticCache</span>
+						<span class="skill">Redis</span>
+						<span class="skill">Nginx</span>
+						<span class="skill">Apache HTTP Server</span>
+						<span class="skill">AWS</span>
+						<span class="skill">Git</span>
+						<span class="skill">Linux</span>
+					</div>
+				</div>
+				<div class="skill-category">
+					<h3>Frontend</h3>
+					<div class="skills">
+						<span class="skill">VueJS</span>
+						<span class="skill">Webpack</span>
+					</div>
+				</div>
+				<div class="skill-category">
+					<h3>외국어</h3>
+					<div class="skills">
+						<span class="skill">영어</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="section">
+			<h2 class="section-title">Experience</h2>
+			<div class="experience-container">
+				<div class="experience-item">
+					<h3 class="experience-dates">2019.11 ~ 현재</h3>
+					<div class="experience-info">
+						<h3>카카오게임즈</h3>
+						<p class="experience-team">웹서비스 백엔드 개발자</p>
+						<p class="experience-description">
+							카카오게임즈에서 다양한 게임 서비스의 <span class="font-heavy">백엔드 개발 및 운영</span>을 담당하고 있습니다. 주요 업무로는 <span class="font-heavy">국내 및 글로벌 게임 웹사이트의 런칭과 유지보수, 인게임 알림 서비스 설계 및 구축, 각종 이벤트 시스템의 구현 및 운영, 실시간 모니터링 시스템 구축</span> 등이 포함됩니다.
+							<br>
+							또한, 효율적인 서버 관리와 시스템 설계를 통해 서비스의 안정성과 성능을 지속적으로 개선하며, 운영 효율성을 높이고 사용자 경험을 최우선으로 고려한 다양한 프로젝트를 성공적으로 수행하고 있습니다.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <div class="section">
+            <h2 class="section-title">Projects</h2>
+            <div class="project">
+                <div class="project-card">
+                    <h3>Kafka 이벤트를 활용한 인게임 알림 서비스 개발</h3>
+					<p class="sub-description"><span class="font-heavy">카카오게임즈</span> (2024.01 ~ 2024.06)</p>
+					<ul class="project-description">
+						<li>인게임에서 <span class="font-heavy">Kafka</span>로 실시간으로 쌓여지고 있는 로그를 기반으로 알림 서비스를 설계하였습니다. <span class="font-heavy">Kafka Streams</span>를 이용해 로그를 필터링하고, 유저에게 실시간으로 알림을 발송하는 시스템을 구축하였습니다.</li>
+						<li>알림 발송 시스템을 <span class="font-heavy">Async</span>하고 <span class="font-heavy">Decoupling</span>된 방식으로 직접 설계하여, 4코어 서버 1대에서 최대 <span class="font-heavy">TPS 4,000</span>의 트래픽을 안정적으로 처리할 수 있었습니다.</li>
+						<li>발송 시스템의 실시간 처리를 위해, <span class="font-heavy">Spring</span>의 <span class="font-heavy">ThreadPoolTaskExecutor</span>를 커스터마이징하여 작업을 비동기적으로 분할 실행도록 설계하였습니다. 그에 따라 <span class="font-heavy">0.3초</span> 미만의 시간에 알림이 발송되도록 전체 프로세스 속도를 최적화하였습니다.</li>
+						<li><span class="font-heavy font-theme" style="font-size: 1.1em"><a href="https://if.kakao.com/session/69" target="_blank">if(kakaoAI)2024</a></span>에서 해당 주제로 발표를 진행하였습니다.</li>
+					</ul>
+                </div>
+                <div class="project-card">
+                    <h3>국내 / 글로벌 게임 웹사이트 런칭 및 유지보수</h3>
+					<p class="sub-description"><span class="font-heavy">카카오게임즈</span> (2020.01 ~ 2024.11)</p>
+					<ul class="project-description">
+						<li>카카오게임즈에서 퍼블리싱하는 다양한 게임들을 런칭하고, 지속적으로 유지보수하였습니다.</li>
+						<li><span class="font-heavy">Spring Boot</span>를 활용한 <span class="font-heavy">Server-Side Redering</span> 방식과 <span class="font-heavy">VueJS + Spring Boot API</span> 서버를 이용한 <span class="font-heavy">Client-Side Rendering</span> 방식의 웹사이트를 개발하고 운영하였습니다.
+						<li><span class="font-heavy">CloudFront</span>와 <span class="font-heavy">S3</span>를 활요하여 글로벌 환경에서도 최적의 응답 속도를 제공하는 프론트엔드 환경을 구축하였습니다.</li>
+						<li>여러 게임에서 공통으로 사용할 수 있는 <span class="font-heavy">웹 공통 컨텐츠 API</span>를 설계하고 개발하였습니다. 이를 통해 <span class="font-heavy">다국어</span> 컨텐츠들을 템플릿화하여 각 게임 웹사이트에서 효율적으로 관리할 수 있게 되었습니다. 이전에는 게임별로 별도의 API 서버가 필요했던 환경에서, 공통 API 서버를 도입하여 전체 서버 개수를 줄이고 비용을 절감하였습니다.</li>
+						<li>공통 컨텐츠 API의 <span class="font-heavy">장애 발생</span> 시에도 웹사이트가 정상적으로 운영될 수 있도록 <span class="font-heavy">CDN을 활용한 백업 플랜</span>을 설계하고 실행하였습니다. 이를 통해 유저들이 장애 상황을 인지하지 못한 채 장애를 신속하게 해결한 경험을 가지고 있습니다.
+						<li><span class="font-heavy">런칭한 웹사이트:</span> <a href="https://tw-odin.kakaogames.com" target="_blank">오딘 대만</a> <a href="https://jp-odin.kakaogames.com" target="_blank">오딘 일본</a> 이터널리턴 <a href="https://eversoul.kakaogames.com" target="_blank">에버소울</a> <a href="https://jp-eversoul.kakaogames.com" target="_blank">에버소울 일본</a> <a href="https://birdieshot.io" target="_blank">버디샷</a>
+					</ul>
+                </div>
+                <div class="project-card">
+                    <h3>사내 통합 발송 시스템 개발 및 유지보수</h3>
+					<p class="sub-description"><span class="font-heavy">카카오게임즈</span> (2022.10 ~ 2024.11)</p>
+					<ul class="project-description">
+						<li>사내 전체에서 유저들에게 <span class="font-heavy">카카오톡, SMS, 이메일 등</span> 다양한 알림을 발송할 때 사용하는 통합 발송 시스템을 개발하고 유지보수하였습니다.</li>
+						<li><span class="font-heavy">NIFI</span>와 <span class="font-heavy">Kafka</span>를 활용하여 자체 쓰로틀링 환경을 구성하고, 각 발송 수단에 맞는 rate-limit을 설정할 수 있도록 하였습니다.</li>
+						<li><span class="font-heavy">Elasticsearch</span>와 <span class="font-heavy">Grafana</span>를 활용하여 발송량 및 발송 통계를 실시간으로 모니터링하고 알림을 통해 장애 발생 시 신속하게 대응할 수 있는 시스템을 구축하였습니다.</li>
+					</ul>
+                </div>
+				<div class="project-card">
+                    <h3>IDC -> AWS 서버 이관</h3>
+					<p class="sub-description"><span class="font-heavy">카카오게임즈</span> (2023.09 ~ 2024.03)</p>
+					<ul class="project-description">
+						<li><span class="font-heavy">약 200대의 서버와 20개의 프로젝트</span>를 기존 IDC 서버에서 AWS EC2로 이관하는 작업을 진행하였습니다.</li>
+						<li>이관 작업 중, 기존의 수동 작업들을 보다 효율적으로 처리하기 위해 <span class="font-heavy">Ansible</span>과 <span class="font-heavy">Shell Script</span>를 활용하여 서버 세팅 및 배포 스크립트를 작성하였습니다.</li>
+						<li>덕분에, 기존에는 서버 한 대씩 수동으로 진행하던 <span class="font-heavy">서버 초기 세팅, 자바 및 APM 설치, 애플리케이션 설정 및 배포 설정</span> 과정을 자동화하여, 서버 전체를 일괄적으로 세팅할 수 있는 환경으로 개선하였습니다. 이를 통해 업무 효율성을 크게 향상시킬 수 있었습니다.</li>
+					</ul>
+                </div>
+				<div class="project-card">
+                    <h3>아레스 시세조회 서비스</h3>
+					<p class="sub-description"><span class="font-heavy">카카오게임즈</span> (2023.06 ~ 2023.09)</p>
+					<ul class="project-description">
+						<li><span class="font-heavy">Elasticsearch</span>를 활용하여 아레스 게임 아이템 시세 조회 서비스의 <span class="font-heavy">자동완성 기능</span>을 개발하였습니다.</li>
+						<li>기존 MySQL을 사용하는 게임들보다 더 정확하고 빠르게 검색할 수 있도록 Elasticsearch를 도입하여 성능을 크게 개선하였습니다.</li>
+						<li>시세조회 서비스에서 지원하는 검색 범위에 맞는 index template을 설계하여 검색 속도를 최적화 하였습니다.</li>
+						<li><span class="font-heavy">wildcard 쿼리, ngram_tokenizer, 커스텀 검색결과 score</span>를 활용하여 아이템명을 <span class="font-heavy">자동으로 완성</span>시켜주는 쿼리를 설계하였습니다.</li>
+					</ul>
+                </div>
+				<div class="project-card">
+                    <h3>AWS Serverless를 활용한 어드민 툴</h3>
+					<p class="sub-description"><span class="font-heavy">카카오게임즈</span> (2022.03 ~ 2022.05)</p>
+					<ul class="project-description">
+						<li><span class="font-heavy">서버 비용 절감</span>을 위해 자주 사용하지 않는 어드민 툴을 <span class="font-heavy">AWS Serverless</span> 환경으로 설계하고 개발하였습니다. 그에 따라 기존 서버가 필요했던 어드민 툴이 서버리스 환경으로 최적화되어 서버가 불필요해졌습니다.</li>
+						<li>AWS의 <span class="font-heavy">Event Bridge</span>를 활용하여 컨텐츠가 자동으로 설정되도록 하는 예약 기능을 개발하였습니다.</li>
+						<li><span class="font-heavy">VueJS</span> 컴포넌트를 활용하여 어드민 툴의 프론트엔드를 설계하고, 자주 사용하는 메뉴들을 템플릿화하여 컴포넌트로 개발하였습니다. 이로 인해 신규 메뉴 추가 시, 기존 <span class="font-heavy">2MD</span>에서 <span class="font-heavy">0.5MD</span>로 개발 시간을 크게 단축시킬 수 있었습니다.</li>
+					</ul>
+                </div>
+				<div class="project-card">
+                    <h3>트위치 드롭스 이벤트 개발</h3>
+					<p class="sub-description"><span class="font-heavy">카카오게임즈</span> (2021.01 ~ 2021.03)</p>
+					<ul class="project-description">
+						<li>회사에서 서비스하는 PC게임들에서 공통적으로 활요할수 있도록 <span class="font-heavy">Twitch Drops 이벤트 공통 시스템</span>을 설계하고 개발하였습니다. 이를 통해 이벤트의 통합 관리와 효유적인 운영이 가능해졌습니다.</li>
+						<li>트위치 <span class="font-heavy">OAuth2</span> 기능과 드롭스 API, 콜백 기능을 사용하여 시스템을 개발하였습니다.</li>
+					</ul>
+                </div>
+				<div class="project-card">
+                    <h3>커뮤니티 모니터링 시스템</h3>
+					<p class="sub-description"><span class="font-heavy">카카오게임즈</span> (2020.03 ~ 2020.05)</p>
+					<ul class="project-description">
+						<li><span class="font-heavy">Python</span>과 <span class="font-heavy">Elasticsearch</span>를 활용하여 각 게임들의 커뮤니티 동향을 모니터링하는 툴을 개발하였습니다.</li>
+						<li><span class="font-heavy">Elasticsearch</span>와 <span class="font-heavy">nori-analyzer</span>를 사용하여 한글 데이터를 분석, 트렌딩 키워드와 인기 게시글 등의 정보를 대시보드에서 한눈에 확인할 수 있도록 제공하였습니다.</li>
+					</ul>
+                </div>
+				<div class="project-card">
+                    <h3>온라인 미니게임 사이트 (긁)</h3>
+					<p class="sub-description"><span class="font-heavy">개인 프로젝트</span> (2024.08 ~ 2024.11)</p>
+					<ul class="project-description">
+						<li>html 베이스의 각종 미니게임들을 즐길수 있는 웹사이트 개발. 사내 동호회에서 개최하는 게임 대회를 운영.</li>
+						<li><span class="font-heavy">주소: </span><a href="http://긁.site" target="_blank">http://긁.site</a></li>
+						<li><span class="font-heavy"><a href="https://www.notion.so/GRG-ccb2f32edc2e4b6ebb8bd664d4caddec" target="_blank">노션</a></span></li>
+					</ul>
+                </div>
+				<div class="project-card">
+                    <h3>2016년 필리핀 대통령 선거 결과 분석 소프트웨어</h3>
+					<p class="sub-description">2016.03 ~ 2016.05</p>
+					<ul class="project-description">
+						<li>필리핀 정부의 의뢰를 받아 2016년 필리핀 대통령 선거 결과를 기반으로 각 지역별 분포도를 분석하는 소프트웨어를 개발.</li>
+					</ul>
+                </div>
+            </div>
+        </div>
+		
+		<div class="section">
+			<h2 class="section-title">Education</h2>
+			<div class="experience-container">
+				<div class="experience-item">
+					<h3 class="experience-dates">2013.06 ~ 2017.05</h3>
+					<div class="experience-info">
+						<h3>University of the Philippines Diliman</h3>
+						<p class="experience-team">컴퓨터과학과</p>
+						<p class="experience-description">
+							<span class="font-heavy">논문: </span>Evaluation of a 3D physics classroom with Myo gesture control armband and unity <a href="https://ieeexplore.ieee.org/abstract/document/8316417" target="_blank">(링크)</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="section">
+			<h2 class="section-title">ETC</h2>
+			<div class="experience-container">
+				<div class="experience-item">
+					<h3 class="experience-dates">2024.08 ~ 2024.11</h3>
+					<div class="experience-info">
+						<h3>패스트캠퍼스 INNER CIRCLE 멘토</h3>
+						<p class="experience-team">Backend Code Reviewer / Project Mentor</p>
+						<p class="experience-description">
+							패스트캠퍼스에서 재직자 대상으로 하는 개발자 성장 프로그램에서 코드 리뷰 및 프로젝트 멘토로 참여 <a href="https://fastcampus.co.kr/b2g_innercircle_dev" target="_blank">(INNER CIRCLE)</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <div class="section">
+			<h2 class="section-title">Contact</h2>
+			<p><i class="fas fa-envelope"></i> Email: <a href="mailto:haram0902@hanmail.net">haram0902@hanmail.net</a></p>
+			<p><i class="fab fa-github"></i> Github: <a href="https://github.com/haram0902" target="_blank">https://github.com/haram0902</a></p>
+			<p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/%ED%95%98%EB%9E%8C-%EA%B9%80-ba9033213/" target="_blank">https://www.linkedin.com/in/%ED%95%98%EB%9E%8C-%EA%B9%80-ba9033213/</a></p>
+		</div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Haram Kim</p>
+    </footer>
+</body>
+</html>
