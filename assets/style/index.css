@@ -5,6 +5,7 @@ body {
 	background-color: #fdfdfd;
 	color: #333;
 }
+
 header {
 	background: #4285f4;
 	color: #fff;
@@ -63,21 +64,22 @@ header {
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
-    background: #f8f9fa;
-    color: #333;
+    background: #4285f4;
+    color: #fff;
     font-size: 1em;
     cursor: pointer;
 }
 
 .lang-btn.active {
-    background: #4285f4;
-    color: #fff;
+    background: #f8f9fa;
+    color: #333;
     font-weight: bold;
 }
 
 .lang-btn:hover {
     background: #5e96f2;
     color: #fff;
+	transition: 0.3s;
 }
 
 .container {
@@ -109,7 +111,7 @@ header {
 .skills-container {
 	display: flex;
 	flex-direction: column;
-	gap: 30px; /* Add spacing between categories */
+	gap: 30px;
 }
 .skill-category {
 	display: flex;

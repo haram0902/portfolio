@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./assets/style/index.css">
+	<script src="./assets/js/index.js" ></script>
 </head>
 <body>
     <header>
@@ -16,13 +17,18 @@
 					<img src="./assets/images/profile.png" alt="Profile Image">
 				</div>
 				<div class="header-name">
-					<h1>김하람 Haram Kim</h1>
+					<div class="ko">
+						<h1>김하람 Haram Kim</h1>
+					</div>
+					<div class="en" style="display: none;">
+						<h1>Haram Kim</h1>
+					</div>
 					<p>Server Backend Developer</p>
 				</div>
 			</div>
-			<div class="language-toggle" style="display: none">
-				<button id="lang-en" class="lang-btn">English</button>
-				<button id="lang-ko" class="lang-btn active">한국어</button>
+			<div class="language-toggle" style="display: none;">
+				<button id="lang-en" class="lang-btn" onclick="setLanguage('en')">English</button>
+				<button id="lang-ko" class="lang-btn" onclick="setLanguage('ko')">한국어</button>
 			</div>
 		</div>
     </header>
@@ -30,10 +36,16 @@
     <div class="container">
         <div class="section">
             <h2 class="section-title">About Me</h2>
-			<p>2019년에 카카오 블라인드 공개채용에 합격하여 카카오게임즈에 입사한 이후, 게임을 즐기는 유저들을 위한 다양한 서비스를 개발하고 유지보수하는 업무를 담당해왔습니다. 주요 언어 및 프레임워크로 <span class="font-theme">Java, Spring, Spring Boot</span>를 사용하여 웹 서비스를 개발해왔으며, 데이터베이스는 <span class="font-theme">MySQL, DynamoDB, Elasticsearch</span>를 활용하여 각 서비스에 최적화된 데이터 관리 시스템을 구축하였습니다.</p>
-			<p>또한, <span class="font-theme">Kafka</span>를 활용해 대규모 트래픽을 안정적으로 처리하는 서비스 환경을 구축하였으며, <span class="font-theme">Jenkins</span>와 <span class="font-theme">Ansible</span>을 활용해 CI/CD 환경을 구축하여 개발및 배포 과정의 효율성을 높였습니다. 더불어 <span class="font-theme">ELK 스택</span>과 <span class="font-theme">Grafana</span>를 활용하여 모니터링 시스템을 구축함으로써 서비스 성능과 운영 상태를 실시간으로 관리하고 신속하게 대응할 수 있는 환경을 마련했습니다.</p>
-			<p>백엔드 개발 업무를 주로 맡으며 이를 즐기는 만큼, 앞으로도 지속적으로 발전하며 사용자에게 최상의 경험을 제공하는 서비스를 만들어 나가고 싶습니다.</p>
-
+			<div class="ko">
+				<p>2019년에 카카오 블라인드 공개채용에 합격하여 카카오게임즈에 입사한 이후, 게임을 즐기는 유저들을 위한 다양한 서비스를 개발하고 유지보수하는 업무를 담당해왔습니다. 주요 언어 및 프레임워크로 <span class="font-theme">Java, Spring, Spring Boot</span>를 사용하여 웹 서비스를 개발해왔으며, 데이터베이스는 <span class="font-theme">MySQL, DynamoDB, Elasticsearch</span>를 활용하여 각 서비스에 최적화된 데이터 관리 시스템을 구축하였습니다.</p>
+				<p>또한, <span class="font-theme">Kafka</span>를 활용해 대규모 트래픽을 안정적으로 처리하는 서비스 환경을 구축하였으며, <span class="font-theme">Jenkins</span>와 <span class="font-theme">Ansible</span>을 활용해 CI/CD 환경을 구축하여 개발및 배포 과정의 효율성을 높였습니다. 더불어 <span class="font-theme">ELK 스택</span>과 <span class="font-theme">Grafana</span>를 활용하여 모니터링 시스템을 구축함으로써 서비스 성능과 운영 상태를 실시간으로 관리하고 신속하게 대응할 수 있는 환경을 마련했습니다.</p>
+				<p>백엔드 개발 업무를 주로 맡으며 이를 즐기는 만큼, 앞으로도 지속적으로 발전하며 사용자에게 최상의 경험을 제공하는 서비스를 만들어 나가고 싶습니다.</p>
+			</div>
+			<div class="en" style="display: none;">
+				<p>I have joined Kakao Games Corp. in 2019 through the Kakao Blind Open Recruitment. I have been responsible for developing and maintaining various services for gamers. I primarily use <span class="font-theme">Java</span>, <span class="font-theme">Spring</span> and <span class="font-theme">Spring Boot</span> to develop web services, and utilize <span class="font-theme">MySQL</span>, <span class="font-theme">DynamoDB</span> and <span class="font-theme">Elasticsearch</span> to build optimized data management systems for each service.</p>
+				<p>Additionally, I have created systems capable of handling large-scale traffic using <span class="font-theme">Kafka</span> and built deployment processes by setting up CI/CD environments with <span class="font-theme">Jenkins</span> and <span class="font-theme">Ansible</span>. Furthermore, I have established monitoring systems using the <span class="font-theme">ELK stack</span> and <span class="font-theme">Grafana</span>, enabling real-time management of service performance and operations to ensure fast responses to any issues.</p>
+				<p>Backend development is my primary area of interest, and I am passionate about continually improving and creating services that provide the best possible experience for users.</p>
+			</div>
         </div>
 
         <div class="section">
@@ -80,7 +92,12 @@
 					</div>
 				</div>
 				<div class="skill-category">
-					<h3>외국어</h3>
+					<div class="ko">
+						<h3>외국어</h3>
+					</div>
+					<div class="en" style="display:none;">
+						<h3>Languages</h3>
+					</div>
 					<div class="skills">
 						<span class="skill">영어</span>
 					</div>
@@ -91,7 +108,7 @@
 		<div class="section">
 			<h2 class="section-title">Experience</h2>
 			<div class="experience-container">
-				<div class="experience-item">
+				<div class="experience-item ko">
 					<h3 class="experience-dates">2019.11 ~ 현재</h3>
 					<div class="experience-info">
 						<h3>카카오게임즈</h3>
@@ -103,13 +120,25 @@
 						</p>
 					</div>
 				</div>
+				<div class="experience-item en" style="display: none;">
+					<h3 class="experience-dates">2019.11 ~ Present</h3>
+					<div class="experience-info">
+						<h3>Kakao Games Corp.</h3>
+						<p class="experience-team">Web Service Backend Developer</p>
+						<p class="experience-description">
+							As a backend developer at Kakao Games Corp., I was responsible for <span class="font-heavy">developing and maintaing game services</span>. This included opening new game websites for domestic and global games, designing and implementing in-game notification systems, managing and operating event systems, and setting up real-time monitoring systems.
+							<br>
+							Additionally, I continally improved the stability and performance of services through efficient server management and system architecture. I have succefully carried out multiple projects, with a focus on prioritizing the user experience.
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 
         <div class="section">
             <h2 class="section-title">Projects</h2>
             <div class="project">
-                <div class="project-card">
+                <div class="project-card ko">
                     <h3>Kafka 이벤트를 활용한 인게임 알림 서비스 개발</h3>
 					<p class="sub-description"><span class="font-heavy">카카오게임즈</span> (2024.01 ~ 2024.06)</p>
 					<ul class="project-description">
@@ -119,6 +148,17 @@
 						<li><span class="font-heavy font-theme" style="font-size: 1.1em"><a href="https://if.kakao.com/session/69" target="_blank">if(kakaoAI)2024</a></span>에서 해당 주제로 발표를 진행하였습니다.</li>
 					</ul>
                 </div>
+				<div class="project-card en" style="display: none;">
+                    <h3>In-Game Notificatoin System Using Kafka Events</h3>
+					<p class="sub-description"><span class="font-heavy">Kakao Games Corp.</span> (2024.01 ~ 2024.06)</p>
+					<ul class="project-description">
+						<li>I have designed and developed an in-game notification system using real-time logs accumulated at <span class="font-heavy">Kafka</span>. Using <span class="font-heavy">Kafka Streams</span>, I filtered the logs and built a system to send real-time notifications to users.</li>
+						<li>I have designed the notifying system to be <span class="font-heavy">asynchronous</span> and <span class="font-heavy">decoupled</span>, enabling it to handle up to 4,000 TPS traffic on a single 4-core server.</li>
+						<li>I used a customized version of <span class="font-heavy">ThreadPoolTaskExecutor</span> from <span class="font-heavy">Spring</span> to make the notification process execute asynchronously to ensure real-time service. As a result, I optimized the overall process speed, ensuring notifications are sent within <span class="font-heavy">0.3</span> seconds.</li>
+						<li>I gave a presentation on the topic at the <span class="font-heavy font-theme" style="font-size: 1.1em"><a href="https://if.kakao.com/session/69" target="_blank">if(kakaoAI)2024</a></span> event.</li>
+					</ul>
+                </div>
+				
                 <div class="project-card">
                     <h3>국내 / 글로벌 게임 웹사이트 런칭 및 유지보수</h3>
 					<p class="sub-description"><span class="font-heavy">카카오게임즈</span> (2020.01 ~ 2024.11)</p>
@@ -208,11 +248,18 @@
 			<div class="experience-container">
 				<div class="experience-item">
 					<h3 class="experience-dates">2013.06 ~ 2017.05</h3>
-					<div class="experience-info">
+					<div class="experience-info ko">
 						<h3>University of the Philippines Diliman</h3>
 						<p class="experience-team">컴퓨터과학과</p>
 						<p class="experience-description">
 							<span class="font-heavy">논문: </span>Evaluation of a 3D physics classroom with Myo gesture control armband and unity <a href="https://ieeexplore.ieee.org/abstract/document/8316417" target="_blank">(링크)</a>
+						</p>
+					</div>
+					<div class="experience-info en">
+						<h3>University of the Philippines Diliman</h3>
+						<p class="experience-team">BS Computer Science</p>
+						<p class="experience-description">
+							<span class="font-heavy">Thesis: </span>Evaluation of a 3D physics classroom with Myo gesture control armband and unity <a href="https://ieeexplore.ieee.org/abstract/document/8316417" target="_blank">(Link)</a>
 						</p>
 					</div>
 				</div>
@@ -224,11 +271,18 @@
 			<div class="experience-container">
 				<div class="experience-item">
 					<h3 class="experience-dates">2024.08 ~ 2024.11</h3>
-					<div class="experience-info">
+					<div class="experience-info ko">
 						<h3>패스트캠퍼스 INNER CIRCLE 멘토</h3>
 						<p class="experience-team">Backend Code Reviewer / Project Mentor</p>
 						<p class="experience-description">
 							패스트캠퍼스에서 재직자 대상으로 하는 개발자 성장 프로그램에서 코드 리뷰 및 프로젝트 멘토로 참여 <a href="https://fastcampus.co.kr/b2g_innercircle_dev" target="_blank">(INNER CIRCLE)</a>
+						</p>
+					</div>
+					<div class="experience-info en">
+						<h3>Fast Campus INNER CIRCLE Project Mentor</h3>
+						<p class="experience-team">Backend Code Reviewer / Project Mentor</p>
+						<p class="experience-description">
+							Participated as a code reviewer and project mentor in a developer growth program called INNER CIRCLE at Fast Campus. <a href="https://fastcampus.co.kr/b2g_innercircle_dev" target="_blank">(INNER CIRCLE)</a>
 						</p>
 					</div>
 				</div>
