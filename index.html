@@ -26,7 +26,7 @@
 					<p>Server Backend Developer</p>
 				</div>
 			</div>
-			<div class="language-toggle" style="display: none;">
+			<div class="language-toggle">
 				<button id="lang-en" class="lang-btn" onclick="setLanguage('en')">English</button>
 				<button id="lang-ko" class="lang-btn" onclick="setLanguage('ko')">한국어</button>
 			</div>
@@ -99,7 +99,8 @@
 						<h3>Languages</h3>
 					</div>
 					<div class="skills">
-						<span class="skill">영어</span>
+						<span class="skill ko">영어</span>
+						<span class="skill en">English</span>
 					</div>
 				</div>
 			</div>
@@ -109,7 +110,31 @@
 			<h2 class="section-title">Experience</h2>
 			<div class="experience-container">
 				<div class="experience-item ko">
-					<h3 class="experience-dates">2019.11 ~ 현재</h3>
+					<h3 class="experience-dates">2025.04 ~ 현재</h3>
+					<div class="experience-info">
+						<h3>쿠팡</h3>
+						<p class="experience-team">Eats Platform Engineering - Sr. Back-end Developer</p>
+						<p class="experience-description">
+							<span class="font-heavy">쿠팡이츠</span> 서비스의 백엔드 플랫폼을 담당하며, 서비스 전반의 안정성과 확장성을 고려한 시스템을 설계하고 개선하고 있습니다. 
+							<br>
+							신규 기능의 빠른 론칭과 유지보수를 위한 효율적인 개발 환경을 조성하는 데에도 기여하고 있습니다.
+						</p>
+					</div>
+				</div>
+				<div class="experience-item en" style="display: none;">
+					<h3 class="experience-dates">2025.04 ~ Present</h3>
+					<div class="experience-info">
+						<h3>Coupang</h3>
+						<p class="experience-team">Eats Platform Engineering - Sr. Back-end Developer</p>
+						<p class="experience-description">
+							I am currently resposible for the backend platform of <span class="font-heavy">Coupang Eats</span> service, focusing on designing and improving systems with an emphasis on stability and scalability.
+							<br>
+							Additionally, I work closely with cross-functional teams to support rapid feature releases and contribute to building an efficient and maintainalb development environment.
+						</p>
+					</div>
+				</div>
+				<div class="experience-item ko">
+					<h3 class="experience-dates">2019.11 ~ 2025.04</h3>
 					<div class="experience-info">
 						<h3>카카오게임즈</h3>
 						<p class="experience-team">웹서비스 백엔드 개발자</p>
@@ -121,7 +146,7 @@
 					</div>
 				</div>
 				<div class="experience-item en" style="display: none;">
-					<h3 class="experience-dates">2019.11 ~ Present</h3>
+					<h3 class="experience-dates">2019.11 ~ 2025.04</h3>
 					<div class="experience-info">
 						<h3>Kakao Games Corp.</h3>
 						<p class="experience-team">Web Service Backend Developer</p>
@@ -159,7 +184,7 @@
 					</ul>
                 </div>
 				
-                <div class="project-card">
+                <div class="project-card ko">
                     <h3>국내 / 글로벌 게임 웹사이트 런칭 및 유지보수</h3>
 					<p class="sub-description"><span class="font-heavy">카카오게임즈</span> (2020.01 ~ 2024.11)</p>
 					<ul class="project-description">
@@ -171,7 +196,20 @@
 						<li><span class="font-heavy">런칭한 웹사이트:</span> <a href="https://tw-odin.kakaogames.com" target="_blank">오딘 대만</a> <a href="https://jp-odin.kakaogames.com" target="_blank">오딘 일본</a> 이터널리턴 <a href="https://eversoul.kakaogames.com" target="_blank">에버소울</a> <a href="https://jp-eversoul.kakaogames.com" target="_blank">에버소울 일본</a> <a href="https://birdieshot.io" target="_blank">버디샷</a>
 					</ul>
                 </div>
-                <div class="project-card">
+				<div class="project-card en">
+                    <h3>Launched and Maintained Game Websites for Local and Global Markets</h3>
+					<p class="sub-description"><span class="font-heavy">Kakao Games Corp.</span> (2020.01 ~ 2024.11)</p>
+					<ul class="project-description">
+						<li>I have launched and continuously maintained various game websites for titles published by Kakao Games.</li>
+						<li>I developed and operated both <span class="font-heavy">Server-Side Redering (SSR)</span> websites using <span class="font-heavy">Spring Boot</span> and <span class="font-heavy">Client-Side Redering (CSR)</span> websites using <span class="font-heavy">VueJS</span> with <span class="font-heavy">Spring Boot API servers</span>.</li>
+						<li>To ensure optimal response times in global environments, I built a frontend infrastructure utilizing <span class="font-heavy">Amazon CloudFront</span> and <span class="font-heavy">S3</span>.</li>
+						<li>I also designed and developed a <span class="font-heavy">common content API</span> that could be used across multiple game websites. This API enabled <span class="font-heavy">efficient management of multilingual content</span> by templating it, allowing each game site to leverage the same system instead of requiring separate APi servers. As a result, the number of servers required were significantly reduced which <span class="font-heavy">saved operating costs.</span></li>
+						<li>To ensure service continuity even during API server failures, I implemented a <span class="font-heavy">backup plan using CDN</span>. This allowed websites to remain fully operational without users noticing any issues during downtime, enabling developers to resolve problems quickly and smoothly.</li>
+						<li><span class="font-heavy">Launched websites include:</span><br> <a href="https://tw-odin.kakaogames.com" target="_blank">Odin-Taiwan</a> <a href="https://jp-odin.kakaogames.com" target="_blank">Odin-Japan</a> Eternal Return <a href="https://eversoul.kakaogames.com" target="_blank">Eversoul</a> <a href="https://jp-eversoul.kakaogames.com" target="_blank">Eversoul-Japan</a> <a href="https://birdieshot.io" target="_blank">Birdieshot</a>
+					</ul>
+                </div>
+				
+                <div class="project-card ko">
                     <h3>사내 통합 발송 시스템 개발 및 유지보수</h3>
 					<p class="sub-description"><span class="font-heavy">카카오게임즈</span> (2022.10 ~ 2024.11)</p>
 					<ul class="project-description">
@@ -180,7 +218,17 @@
 						<li><span class="font-heavy">Elasticsearch</span>와 <span class="font-heavy">Grafana</span>를 활용하여 발송량 및 발송 통계를 실시간으로 모니터링하고 알림을 통해 장애 발생 시 신속하게 대응할 수 있는 시스템을 구축하였습니다.</li>
 					</ul>
                 </div>
-				<div class="project-card">
+				<div class="project-card en">
+                    <h3>Developed and Maintained Notification Delivery System</h3>
+					<p class="sub-description"><span class="font-heavy">Kakao Games Corp.</span> (2022.10 ~ 2024.11)</p>
+					<ul class="project-description">
+						<li>Developed and maintained a <span class="font-heavy">notification delivery system</span> used across the company to send alerts and messages to users via multiple channels such as <span class="font-heavy">Kakaotalk, SMS, and email</span>.</li>
+						<li>Built a <span class="font-heavy">custom throttling environment</span> using <span class="font-heavy">NiFi</span> and <span class="font-heavy">Kafka</span>, enabling channel-specific <span class="font-heavy">rate-limit configurations</span>.</li>
+						<li>Leveraged <span class="font-heavy">ElasticSearch</span> and <span class="font-heavy">Grafana</span> to provide <span class="font-heavy">real-time visualization of delivery statistics</span>, and set up an <span class="font-heavy">alerting system</span> to ensure rapid response in case of failures.</li>
+					</ul>
+                </div>
+				
+				<div class="project-card ko">
                     <h3>IDC -> AWS 서버 이관</h3>
 					<p class="sub-description"><span class="font-heavy">카카오게임즈</span> (2023.09 ~ 2024.03)</p>
 					<ul class="project-description">
@@ -189,7 +237,17 @@
 						<li>덕분에, 기존에는 서버 한 대씩 수동으로 진행하던 <span class="font-heavy">서버 초기 세팅, 자바 및 APM 설치, 애플리케이션 설정 및 배포 설정</span> 과정을 자동화하여, 서버 전체를 일괄적으로 세팅할 수 있는 환경으로 개선하였습니다. 이를 통해 업무 효율성을 크게 향상시킬 수 있었습니다.</li>
 					</ul>
                 </div>
-				<div class="project-card">
+				<div class="project-card en">
+                    <h3>Server Migration from IDC to AWS</h3>
+					<p class="sub-description"><span class="font-heavy">Kakao Games Corp.</span> (2023.09 ~ 2024.03)</p>
+					<ul class="project-description">
+						<li>Led the migration of approximately <span class="font-heavy">200 servers over 20 projects</span> from an on-premise IDC environment to <span class="font-heavy">AWS EC2</span>.</li>
+						<li>To improve efficiency, I created <span class="font-heavy">automated setup and deployment scripts</span> using <span class="font-heavy">Ansible</span> and <span class="font-heavy">Shell scripting</span>, replacing previously manual tasks such as initial server configuration, Java/APM installation, and application setup.
+						<li>By automating this processes, I significantly enhanced operational efficiency and built a <span class="font-heavy">more scalable and consistent infrastructure</span> for large-scale server provisioning and deployment.</li>
+					</ul>
+                </div>
+				
+				<div class="project-card ko">
                     <h3>아레스 시세조회 서비스</h3>
 					<p class="sub-description"><span class="font-heavy">카카오게임즈</span> (2023.06 ~ 2023.09)</p>
 					<ul class="project-description">
@@ -199,7 +257,17 @@
 						<li><span class="font-heavy">wildcard 쿼리, ngram_tokenizer, 커스텀 검색결과 score</span>를 활용하여 아이템명을 <span class="font-heavy">자동으로 완성</span>시켜주는 쿼리를 설계하였습니다.</li>
 					</ul>
                 </div>
-				<div class="project-card">
+				<div class="project-card en">
+                    <h3>ARES Item Price Lookup Service</h3>
+					<p class="sub-description"><span class="font-heavy">Kakao Games Corp.</span> (2023.06 ~ 2023.09)</p>
+					<ul class="project-description">
+						<li>Developed the <span class="font-heavy">autocomplete feature</span> of game items for the ARES game item price lookup service using <span class="font-heavy">ElasticSearch</span></li>
+						<li>To provide faster and more accurate search results compared to previous MySQL-based systems, I integrated ElasticSearch and designed an <span class="font-heavy">index template optimized for the service's search range</span>, improving query performance.</li>
+						<li>Implemented an intelligent autocomplete query by combining <span class="font-heavy">wildcard queries, ngram_tokenizer, and custom scoring logic</span> to deliver relevant item name suggestions.</li>
+					</ul>
+                </div>
+				
+				<div class="project-card ko">
                     <h3>AWS Serverless를 활용한 어드민 툴</h3>
 					<p class="sub-description"><span class="font-heavy">카카오게임즈</span> (2022.03 ~ 2022.05)</p>
 					<ul class="project-description">
@@ -208,7 +276,17 @@
 						<li><span class="font-heavy">VueJS</span> 컴포넌트를 활용하여 어드민 툴의 프론트엔드를 설계하고, 자주 사용하는 메뉴들을 템플릿화하여 컴포넌트로 개발하였습니다. 이로 인해 신규 메뉴 추가 시, 기존 <span class="font-heavy">2MD</span>에서 <span class="font-heavy">0.5MD</span>로 개발 시간을 크게 단축시킬 수 있었습니다.</li>
 					</ul>
                 </div>
-				<div class="project-card">
+				<div class="project-card en">
+                    <h3>Admin Tool Using AWS Serverless</h3>
+					<p class="sub-description"><span class="font-heavy">Kakao Games Corp.</span> (2022.03 ~ 2022.05)</p>
+					<ul class="project-description">
+						<li>To reduce infrastructure costs, I designed and developed an <span class="font-heavy">admin tool in a fully AWS Serverless environment</span>, eliminating the need for servers that are not frequently used.</li>
+						<li>By leveraing <span class="font-heavy">AWS EventBridge</span>, I implemented a <span class="font-heavy">scheduling feature</span> that allows contents to be automatically changed at designated times.</li>
+						<li>The frontend was built using <span class="font-heavy">VueJS components</span>, with frequently used menus <span class="font-heavy">templated as reusable components</span>, reducing development time for adding new menus from <span class="font-heavy">2MD to just 0.5MD</span>.</li>
+					</ul>
+                </div>
+				
+				<div class="project-card ko">
                     <h3>트위치 드롭스 이벤트 개발</h3>
 					<p class="sub-description"><span class="font-heavy">카카오게임즈</span> (2021.01 ~ 2021.03)</p>
 					<ul class="project-description">
@@ -216,7 +294,17 @@
 						<li>트위치 <span class="font-heavy">OAuth2</span> 기능과 드롭스 API, 콜백 기능을 사용하여 시스템을 개발하였습니다.</li>
 					</ul>
                 </div>
-				<div class="project-card">
+				<div class="project-card en">
+                    <h3>Twitch Drops Event System Development</h3>
+					<p class="sub-description"><span class="font-heavy">Kakao Games Corp.</span> (2021.01 ~ 2021.03)</p>
+					<ul class="project-description">
+						<li>Designed and developed a <span class="font-heavy">common Twitch Drops event system</span> that could be used across multiple games serviced by Kakao Games.</li>
+						<li>The system enabled <span class="font-heavy">centralized management and efficient operation</span> of Twitch Drops events across different game titles.</li>
+						<li>Integrated <span class="font-heavy">Twitch OAuth2, the Drops API, and callback features</span> to automate user account linking and item reward distribution through the platform</li>
+					</ul>
+                </div>
+				
+				<div class="project-card ko">
                     <h3>커뮤니티 모니터링 시스템</h3>
 					<p class="sub-description"><span class="font-heavy">카카오게임즈</span> (2020.03 ~ 2020.05)</p>
 					<ul class="project-description">
@@ -224,7 +312,16 @@
 						<li><span class="font-heavy">Elasticsearch</span>와 <span class="font-heavy">nori-analyzer</span>를 사용하여 한글 데이터를 분석, 트렌딩 키워드와 인기 게시글 등의 정보를 대시보드에서 한눈에 확인할 수 있도록 제공하였습니다.</li>
 					</ul>
                 </div>
-				<div class="project-card">
+				<div class="project-card en">
+                    <h3>Community Monitoring System</h3>
+					<p class="sub-description"><span class="font-heavy">Kakao Games Corp.</span> (2020.03 ~ 2020.05)</p>
+					<ul class="project-description">
+						<li>Developed a tool for monitoring community trends across multiple games using <span class="font-heavy">Python</span> and <span class="font-heavy">ElasticSearch</span></li>
+						<li>Leveraged <span class="font-heavy">nori-analyzer</span> to analyze Korean language data, providing a dashboard with insights such as trending keywords and popular posts, allowing for real-time tracking and quick resopnse to community reactions.</li>
+					</ul>
+                </div>
+				
+				<div class="project-card ko">
                     <h3>온라인 미니게임 사이트 (긁)</h3>
 					<p class="sub-description"><span class="font-heavy">개인 프로젝트</span> (2024.08 ~ 2024.11)</p>
 					<ul class="project-description">
@@ -233,11 +330,29 @@
 						<li><span class="font-heavy"><a href="https://www.notion.so/GRG-ccb2f32edc2e4b6ebb8bd664d4caddec" target="_blank">노션</a></span></li>
 					</ul>
                 </div>
-				<div class="project-card">
+				<div class="project-card en">
+                    <h3>Online Mini-Game Website (긁)</h3>
+					<p class="sub-description"><span class="font-heavy">Personal Project</span> (2024.08 ~ 2024.11)</p>
+					<ul class="project-description">
+						<li>Developed a website offering various <span class="font-heavy">HTML-based mini-games</span>, while also hosting <span class="font-heavy">game tournaments</span>.</li>
+						<li>The platform allwoed users to enjoy different mini-games and seamlessly participate in tournaments.</li>
+						<li><span class="font-heavy">Address: </span><a href="http://긁.site" target="_blank">http://긁.site</a></li>
+						<li><span class="font-heavy"><a href="https://www.notion.so/GRG-ccb2f32edc2e4b6ebb8bd664d4caddec" target="_blank">Notion</a></span></li>
+					</ul>
+                </div>
+				
+				<div class="project-card ko">
                     <h3>2016년 필리핀 대통령 선거 결과 분석 소프트웨어</h3>
 					<p class="sub-description">2016.03 ~ 2016.05</p>
 					<ul class="project-description">
 						<li>필리핀 정부의 의뢰를 받아 2016년 필리핀 대통령 선거 결과를 기반으로 각 지역별 분포도를 분석하는 소프트웨어를 개발.</li>
+					</ul>
+                </div>
+				<div class="project-card en">
+                    <h3>2016 Philippines Predisential Election Result Analysis Software</h3>
+					<p class="sub-description">2016.03 ~ 2016.05</p>
+					<ul class="project-description">
+						<li>Developed software commissioned by the Philippine governemnt to analyze the results of the 2016 Philippine presidential election, focusing on the regional distribution of votes.</li>
 					</ul>
                 </div>
             </div>
@@ -270,7 +385,7 @@
 			<h2 class="section-title">ETC</h2>
 			<div class="experience-container">
 				<div class="experience-item">
-					<h3 class="experience-dates">2024.08 ~ 2024.11</h3>
+					<h3 class="experience-dates">2024.08 ~ 2025.06</h3>
 					<div class="experience-info ko">
 						<h3>패스트캠퍼스 INNER CIRCLE 멘토</h3>
 						<p class="experience-team">Backend Code Reviewer / Project Mentor</p>
